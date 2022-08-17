@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { WorldMap } from "./worldMap";
 
 function App() {
+  // const Arc = d3
+  //   .arc()
+  //   .innerRadius(90)
+  //   .outerRadius(100)
+  //   .startAngle(0)
+  //   .endAngle(Math.PI * 2);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WorldMap x={0} y={0} />
     </div>
   );
 }
